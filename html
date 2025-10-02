@@ -1,0 +1,166 @@
+<header>
+  <div class="header-inner container">
+    <div class="brand">
+      <div class="logo">K</div>
+      <div>
+        <div class="title">KITsune IT</div>
+        <div class="small" style="color:var(--muted);font-size:12px">Web · Automation · Integrations</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+      <a class="cta" href="#contact">Get Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-inner container">
+      <div class="hero-left fade-in stagger-1">
+        <span class="eyebrow">Local & Remote · Trusted</span>
+        <h1>Look sharp — grow your business.<br><span style="color:var(--accent)">KITsune</span> builds websites & automations that convert.</h1>
+        <p class="lead">We design fast, modern landing pages, booking flows and simple automations for local businesses — barbershops, salons, cafes and small stores. Quick delivery, clean design, and friendly support.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">Book a Call</a>
+          <a class="btn ghost" href="#portfolio">See Work</a>
+        </div>
+      </div>
+
+      <div class="hero-right fade-in stagger-2">
+        <div class="card">
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <div>
+              <div class="small">Starter Package</div>
+              <div class="price">$899</div>
+            </div>
+            <div style="text-align:right">
+              <div class="small">Delivery</div>
+              <div style="font-weight:700">7 days</div>
+            </div>
+          </div>
+
+          <div class="list">
+            <div class="item"><div>Landing page (responsive)</div><div class="small">✔</div></div>
+            <div class="item"><div>Booking / Contact Form</div><div class="small">✔</div></div>
+            <div class="item"><div>Basic SEO & Analytics</div><div class="small">✔</div></div>
+          </div>
+
+          <div style="margin-top:14px;display:flex;gap:10px">
+            <button class="btn" onclick="document.location='#contact'">Order Now</button>
+            <button class="btn ghost" onclick="scrollToSection('services')">Full Offer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section container fade-in stagger-3">
+    <h3 style="color:var(--accent);margin:0 0 18px 0">Our Services</h3>
+    <div class="grid">
+      <div class="service">
+        <h4>Landing Pages & Websites</h4>
+        <p>Modern responsive landing pages built on lightweight stacks — fast delivery and clear UX that drives bookings and leads.</p>
+      </div>
+      <div class="service">
+        <h4>Booking & Payments</h4>
+        <p>Online booking flows, appointment calendars and payment integration (Stripe / PayPal) so customers can book and pay easily.</p>
+      </div>
+      <div class="service">
+        <h4>Automation & Integrations</h4>
+        <p>Connect forms to Google Sheets, CRMs, send automatic receipts, update inventories — reduce manual work with simple automations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="section container">
+    <h3 style="color:var(--accent);margin-bottom:18px">Portfolio (demo)</h3>
+    <div class="samples">
+      <div class="sample fade-in stagger-1">
+        <div class="thumb">Urban Cut — Landing</div>
+        <h4 style="margin:12px 0 6px 0">Barbershop landing</h4>
+        <p class="small">Landing with booking CTA, mobile-first design and simple contact form.</p>
+      </div>
+      <div class="sample fade-in stagger-2">
+        <div class="thumb">Cafe Flow</div>
+        <h4 style="margin:12px 0 6px 0">Cafe online menu</h4>
+        <p class="small">Menu + order form integrated with Google Sheets for easy order tracking.</p>
+      </div>
+      <div class="sample fade-in stagger-3">
+        <div class="thumb">Studio CRM</div>
+        <h4 style="margin:12px 0 6px 0">Simple CRM dashboard</h4>
+        <p class="small">Admin panel showing bookings and customer list (demo).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section container">
+    <div class="about">
+      <div style="flex:1">
+        <h3 style="color:var(--accent);margin-bottom:12px">About KITsune</h3>
+        <p class="text">KITsune is a compact team focused on helping local businesses move online quickly. We combine design sense with practical automation: booking flows, simple integrations and landing pages that convert. We value speed, clarity and reliability.</p>
+        <p class="muted" style="margin-top:12px">Small footprint, big results — we handle the tech so you can focus on customers.</p>
+      </div>
+      <div style="width:260px">
+        <div class="card" style="padding:18px">
+          <div style="font-weight:700">Why clients choose us</div>
+          <ul style="margin:12px 0 0 18px;color:var(--muted)">
+            <li>Fast delivery (1 week)</li>
+            <li>Clear pricing</li>
+            <li>Maintenance options</li>
+          </ul>
+          <div style="margin-top:14px"><button class="btn" onclick="document.location='#contact'">Get Quote</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section container">
+    <h3 style="color:var(--accent);margin-bottom:12px">Contact & Booking</h3>
+    <div class="contact-wrap">
+      <div>
+        <p class="muted">Fill the form or email us directly at <strong>kitsune.dev.contact@gmail.com</strong>. For urgent requests call +48 731 317 358.</p>
+
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <input type="text" id="name" placeholder="Your name" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="text" id="business" placeholder="Business (optional)" />
+          <textarea id="message" placeholder="Describe the project or booking details" required></textarea>
+          <div style="display:flex;gap:10px;align-items:center">
+            <button class="btn" type="submit">Send Request</button>
+            <button type="button" class="btn ghost" onclick="openWhats()">WhatsApp</button>
+          </div>
+          <div id="formNote" class="muted" style="margin-top:8px">We reply within 24 hours on business days.</div>
+        </form>
+      </div>
+
+      <aside>
+        <div class="card">
+          <div style="font-weight:700">Visit</div>
+          <p class="small" style="margin:8px 0 0 0">KITsune Solutions, Krakow, Poland</p>
+          <div style="height:12px"></div>
+          <div style="font-weight:700">Working hours</div>
+          <p class="small" style="margin:8px 0 0 0">Mon–Sat: 09:00 – 19:00</p>
+          <div style="height:18px"></div>
+          <div style="font-weight:700">Packages</div>
+          <div class="small" style="margin-top:8px">From $899 — landing + booking</div>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>© <strong>KITsune IT </strong> 2025 by Kyrylo Sverbiy</div>
+      <div class="muted">Made with LOVE — demo portfolio to show how we are working</div>
+    </div>
+  </div>
+</footer>
